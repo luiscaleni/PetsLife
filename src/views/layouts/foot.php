@@ -10,7 +10,6 @@ class Foot{
             </div>
             <script src="src/views/js/jquery.min.js"></script>
             <script src="src/views/js/js.js"></script>
-            <script src="src/views/js/js_header.js"></script>
         </body>
         '.$this->add.'
         </html>

@@ -17,21 +17,28 @@ body {
 
 .container {
   position: relative;
+  cursor: pointer;
   width: 300px;
   height: 649px;
   border: 10px solid black;
   box-shadow: 0px 0px 3px #ddd;
   border-radius: 40px;
   background-image: url("../assets/images/wp/iphone2.png");
-  transition: all 0.3s ease-in-out;
+  background-color: rgb(206, 94, 94);
+  transition: all 1s ease-in-out;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container .notf {
+  position: absolute;
+  top: 0px;
   width: 82%;
   height: 25px;
   padding: 5px 30px 0px 30px;
   color: white;
+  text-shadow: 1px 0px 2px #000;
   border-radius: 40px 40px 0px 0px;
   display: flex;
   justify-content: space-between;
@@ -46,9 +53,9 @@ body {
 .container .notf .info .battery {
   width: 30px;
   height: 16px;
-  padding: 2px;
+  padding: 1px 2px;
   border-radius: 5px;
-  background-color: green;
+  background-color: rgb(0, 207, 0);
 }
 .container .notf .info span {
   width: 5px;
@@ -62,10 +69,36 @@ body {
   border-radius: 20px;
   background-color: black;
 }
+.container .execute {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  border-radius: 25px;
+  z-index: 5;
+  background-color: orange;
+}
+.container .execute .home {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .execute .main-execute {
+  margin: 10px;
+  color: White;
+}
 .container .content {
   width: 100%;
   height: 81%;
   color: white;
+  padding-top: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -91,9 +124,14 @@ body {
 .container .content .orange {
   width: 48px;
   height: 48px;
+  cursor: pointer;
   border-radius: 10px;
   margin: 1px;
+  display: block;
   background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container .content .widget {
   width: 128px;
@@ -116,7 +154,7 @@ body {
   justify-content: center;
   align-items: flex-start;
 }
-.container .pantallas div {
+.container .pantallas #ventanas {
   width: 40px;
   height: 20px;
   border-radius: 20px;
@@ -126,17 +164,17 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-.container .pantallas div p {
+.container .pantallas #ventanas p {
   color: white;
   font-size: 20px;
   font-weight: bold;
 }
 .container .dock {
   position: absolute;
-  bottom: 0px;
-  width: 100%;
+  bottom: 10px;
+  width: 90%;
   height: 65px;
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 20px;
   background-color: rgba(230, 230, 230, 0.3);
   display: flex;
   flex-direction: row;
@@ -150,6 +188,47 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 10px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  border: 5px dotted #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.magic {
+  transform: scale(0) translate(0px, 0px);
+  z-index: -1;
+}
+
+.magicUP {
+  animation: maximizar 0.3s ease-in-out;
+}
+@keyframes maximizar {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

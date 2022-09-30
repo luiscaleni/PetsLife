@@ -19,11 +19,6 @@ class Head{
             '.$this->add.'
         </head>
         <body>
-            <div class="load" id="load">
-                <div class="loader">
-                    <span></span>
-                </div>
-            </div>
         ';
     }
     public function index(){

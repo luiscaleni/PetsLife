@@ -1,4 +1,5 @@
 <div class="container">
+    <span class="loader" id="loader"></span>
     <div class="notf">
         <div class="info"><p>09:41</p></div>
         <div class="dynamic-island"></div>
@@ -7,7 +8,10 @@
             <span></span>
         </div>
     </div>
-    <!--<div class="execute"></div>-->
+    <div class="execute" id="execute">
+        <?php include("src/views/components/execute.php");?>
+        <span class="home" onclick="ocultar()">_______________</span>
+    </div>
     <div class="content">
         <a href="#" class="cont-app widget"><img src="src/views/assets/images/icons-ios/stocks.ico" /></a>
         <a href="#" class="cont-app"><img src="src/views/assets/images/icons-ios/calculadora.ico" /><p>Calculadora</p></a>
@@ -22,9 +26,15 @@
         <a href="#" class="cont-app"><img src="src/views/assets/images/icons-ios/camara.ico" /><p>Cámara</p></a>
         <a href="#" class="cont-app"><img src="src/views/assets/images/icons-ios/mensajes.ico" /><p>Mensajes</p></a>
         <a href="#" class="cont-app"><img src="src/views/assets/images/icons-ios/notas.ico" /><p>Notas</p></a>
-        <a href="#" class="cont-app"><div class="orange"><img src="src/views/assets/images/icons-ios/huella.ico" /></div><p>Pet´s Life</p></a>
+
+        <div class="cont-app" onclick="huella()" title="Pet´s Life">
+            <button class="orange" id="huella">
+                <img src="src/views/assets/images/icons-ios/huella.ico" />
+            </button>
+            <p>Pet´s Life</p>
+        </div>
     </div>
-    <div class="pantallas"><div><p>. . .</p></div></div>
+    <div class="pantallas"><div id="ventanas"><p>. . .</p></div></div>
 
     <div class="dock">
         <a href="#"><img src="src/views/assets/images/icons-ios/telefono.ico" id="telefono"/></a>
