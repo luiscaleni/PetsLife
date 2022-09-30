@@ -14,7 +14,7 @@ class Head{
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="src/views/css/style.css" type="text/css">
-            <link rel="icon" type="image/x-icon" href="src/views/assets/img/apple_logo.ico"/>
+            <link rel="icon" type="image/x-icon" href="src/views/assets/images/huella.ico"/>
             <title>Pet´s Life</title>
             '.$this->add.'
         </head>
