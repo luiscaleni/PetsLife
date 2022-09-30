@@ -24,7 +24,7 @@
         <a href="#" class="cont-app"><img src="src/views/assets/images/icons-ios/notas.ico" /><p>Notas</p></a>
         <a href="#" class="cont-app"><div class="orange"><img src="src/views/assets/images/icons-ios/huella.ico" /></div><p>Pet´s Life</p></a>
     </div>
-    <div class="pantallas"><div><p>.</p></div></div>
+    <div class="pantallas"><div><p>. . .</p></div></div>
 
     <div class="dock">
         <a href="#"><img src="src/views/assets/images/icons-ios/telefono.ico" id="telefono"/></a>
