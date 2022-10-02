@@ -19,6 +19,9 @@ class Head{
             '.$this->add.'
         </head>
         <body>
+        <span class="loader-wp" id="loader-wp"></span>
+        <div class="container">
+        <span class="loader" id="loader"></span>
         ';
     }
     public function index(){

@@ -15,8 +15,9 @@ $router->get('/index.php', function() {
     $home->render("index");
 });
 
-$router->get('/prueba.php', function() { 
-    require_once 'src/views/prueba.php';
+$router->get('/nombre_de_la_mascota.php', function() { 
+    $home = new Controller;
+    $home->render("nombre_de_la_mascota");
 });
 
 $router->run();
