@@ -9,11 +9,12 @@ $head = new Head;
 echo $head->index();
 
     $home = new Home;
-    echo $home->addItem('<div class="execute" id="execute">');
+    echo $home->addItem('<div class="ventana-abierta" id="execute2">');
+    
+        include("src/views/bodys/ventanas.inc.php");
 
-        include("src/views/bodys/index.inc.php");
-
-    echo $home->addItemAndHome("</div>");
+    
+    echo $home->addItemAndHomeOpens('</div>');
 
     include("src/views/components/apps.php");
 

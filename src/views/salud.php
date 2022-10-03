@@ -11,8 +11,9 @@ echo $head->index();
     $home = new Home;
     echo $home->addItem('<div class="execute" id="execute">');
 
-        include("src/views/bodys/index.inc.php");
+        include("src/views/bodys/salud.inc.php");
 
+    $home = new Home;
     echo $home->addItemAndHome("</div>");
 
     include("src/views/components/apps.php");

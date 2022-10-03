@@ -8,7 +8,7 @@ class View{
     }
 
     public function srcBodys($nombre){
-        return $this->direction = 'src/views/bodys/' . $nombre . '.php';
+        return $this->direction = 'src/views/bodys/' . $nombre . '.inc.php';
     }
 
  }

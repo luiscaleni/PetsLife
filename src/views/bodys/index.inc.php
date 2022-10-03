@@ -1,8 +1,6 @@
 <div class="main-execute" id="main">
     <div class="register">
-        <span id="logo">
-            <img src="src/views/assets/images/huella.png">
-        </span>
+        <span id="logo"><img src="src/views/assets/images/huella.png" /></span>
         <div id="form">
             <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
